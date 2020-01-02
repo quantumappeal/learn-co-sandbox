@@ -1,0 +1,12 @@
+foods = {"pie" => "delicious", "broccoli" => "not delicious",
+"carrots" => "not delicious", "apples" => "delicious",
+"peanut butter" => "delicious"}
+
+
+def delicious?
+  foods.map do |food, status|
+    if status == "delicious"
+    food
+    end
+  end.compact
+end
